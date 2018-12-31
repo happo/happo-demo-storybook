@@ -9,6 +9,7 @@
   },
   "scripts": {
     "happo": "happo",
+    "happo-ci": "happo-ci-circleci",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
