@@ -17,3 +17,30 @@ storiesOf('Button', module)
       </span>
     </Button>
   ));
+
+class Test extends React.Component{
+  constructor(props) {
+    super(props);
+    this.state = {};
+  }
+
+  componentDidMount() {
+    setTimeout(() => this.setState({ ready: true }), 100);
+
+    const style = document.createElement('style');
+    document.head.appendChild(style);
+    style.sheet.insertRule('.foobar { border: 1px solid red }');
+  }
+
+  render() {
+    if (!this.state.ready) {
+      return null;
+    }
+    return (
+      <div className="foobar">
+        I'm ready
+      </div>
+    );
+  }
+}
+storiesOf('Test', module).add('asynchronus with inserted css', () => <Test />);
