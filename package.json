@@ -10,6 +10,7 @@
   "scripts": {
     "happo": "happo",
     "happo-ci": "happo-ci-circleci",
+    "happo-ci-travis": "happo-ci-travis",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
