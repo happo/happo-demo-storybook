@@ -34,6 +34,6 @@
     "@storybook/react": "^4.1.4",
     "babel-loader": "^8.0.4",
     "happo-plugin-storybook": "^1.1.4",
-    "happo.io": "^3.5.1-rc.3"
+    "happo.io": "^3.5.1-rc.4"
   }
 }
