@@ -5630,10 +5630,10 @@ happo-plugin-storybook@^1.1.4:
   resolved "https://registry.npmjs.org/happo-plugin-storybook/-/happo-plugin-storybook-1.1.4.tgz#867de73d19a24e71960f6e0637e8347848aa596d"
   integrity sha512-dQqofq30HBhmye8B8G+8OEWFkizMhbpqqWdYxT2Y13FBrN0Dglnwu23kBrYkQyplLaTFnPxxkZxw3OOBPBB7ig==
 
-happo.io@^3.5.1-rc.6:
-  version "3.5.1-rc.6"
-  resolved "https://registry.npmjs.org/happo.io/-/happo.io-3.5.1-rc.6.tgz#e6449a2a1edc1de9eada3e1ab2723e7ebd3f7de0"
-  integrity sha512-MqaxHoqqRiX1h430yuzOwHe+qWo1aR7+klDS7mZbczyiYlZCdHLFxOkmn+X9EsZGzH+6cmxh5sj/NSNP40Lk3Q==
+happo.io@^3.5.1-rc.7:
+  version "3.5.1-rc.7"
+  resolved "https://registry.npmjs.org/happo.io/-/happo.io-3.5.1-rc.7.tgz#fa42db446b1d00e10fa017b838a3fc4ec8fd180e"
+  integrity sha512-BwMagiMY/FGKrkbGppl/PjVW2/sKMyZBuGHhlbPx1QzVw4Zdy3z5qxhmkPU6DHWokmGw/bCQ9z+6UzLXqVMdWg==
   dependencies:
     babel-plugin-dynamic-import-node "^2.1.0"
     babel-polyfill "^6.26.0"
