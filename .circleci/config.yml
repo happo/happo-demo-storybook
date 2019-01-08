@@ -1,31 +1,11 @@
 version: 2.1
 
 orbs:
-  happo: happo/happo@dev:fifth
-
-jobs:
-  happo:
-    docker:
-      - image: circleci/node:8
-
-    steps:
-      - checkout
-      - happo/run_happo
-
-
-  happo_two:
-    docker:
-      - image: circleci/node:8
-
-    steps:
-      - checkout
-      - happo/run_happo
-
+  happo: happo/happo@dev:seventh
 
 workflows:
   version: 2.1
   run_all:
     jobs:
-      - happo
-      - happo_two
+      - happo/run
 
