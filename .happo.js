@@ -1,3 +1,5 @@
+const path = require('path');
+
 const { RemoteBrowserTarget } = require('happo.io');
 const happoPluginStorybook = require('happo-plugin-storybook');
 
@@ -26,8 +28,10 @@ module.exports = {
     }),
   },
 
+  setupScript: path.resolve(__dirname, 'happoSetup.js'),
+
   plugins: [
-    happoPluginStorybook(),
+    // happoPluginStorybook(),
   ],
 
   type: 'react',
