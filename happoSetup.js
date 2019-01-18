@@ -1,3 +1,14 @@
-// Global styles in styled-components are removed as part of unmounting a
-// component. We can disable unmounting to work around the issue.
-window.happoCleanup = () => null;
+import { createGlobalStyle } from 'styled-components';
+import React from 'react';
+import ReactDOM from 'react-dom';
+
+const GlobalStyle = createGlobalStyle`
+  body {
+    color: red;
+  }
+`;
+
+ReactDOM.render(
+  <GlobalStyle />,
+  document.head,
+);

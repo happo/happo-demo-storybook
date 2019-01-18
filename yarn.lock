@@ -5671,10 +5671,10 @@ happo-plugin-storybook@^1.1.4:
   resolved "https://registry.npmjs.org/happo-plugin-storybook/-/happo-plugin-storybook-1.1.4.tgz#867de73d19a24e71960f6e0637e8347848aa596d"
   integrity sha512-dQqofq30HBhmye8B8G+8OEWFkizMhbpqqWdYxT2Y13FBrN0Dglnwu23kBrYkQyplLaTFnPxxkZxw3OOBPBB7ig==
 
-happo.io@^3.5.1-rc.10:
-  version "3.5.1-rc.10"
-  resolved "https://registry.npmjs.org/happo.io/-/happo.io-3.5.1-rc.10.tgz#de29f6826587881927373ea2cc44afc4379983bd"
-  integrity sha512-ZLbPJtqfjeyp2p0upRFsHx3P5LB48tcbbfLCPG8HnpqboQuobkaA9++Pxhpi4XveFluogHYx2L1KGKhVnb8kew==
+happo.io@^3.6.1:
+  version "3.6.1"
+  resolved "https://registry.npmjs.org/happo.io/-/happo.io-3.6.1.tgz#901e80595afc35d32d6165df37351cf616da1666"
+  integrity sha512-HDoPqrBc8Z6ymOkKxljNyJuXsCdWFA3o5Vhp1nV5wSs6Xpv+7MlP/rGzEkGWd4YWZEmWTKN8F0sKJgKjccTRtQ==
   dependencies:
     babel-plugin-dynamic-import-node "^2.1.0"
     babel-polyfill "^6.26.0"
@@ -5686,6 +5686,7 @@ happo.io@^3.5.1-rc.10:
     request "^2.85.0"
     request-promise-native "^1.0.5"
     require-relative "^0.8.7"
+    source-map-support "^0.5.9"
     string.prototype.matchall "^3.0.0"
     supports-color "^5.4.0"
 
@@ -10706,6 +10707,14 @@ source-map-support@^0.5.6, source-map-support@~0.5.6:
   version "0.5.9"
   resolved "https://registry.yarnpkg.com/source-map-support/-/source-map-support-0.5.9.tgz#41bc953b2534267ea2d605bccfa7bfa3111ced5f"
   integrity sha512-gR6Rw4MvUlYy83vP0vxoVNzM6t8MUXqNuRsuBmBHQDu1Fh6X015FrLdgoDKcNdkwGubozq0P4N0Q37UyFVr1EA==
+  dependencies:
+    buffer-from "^1.0.0"
+    source-map "^0.6.0"
+
+source-map-support@^0.5.9:
+  version "0.5.10"
+  resolved "https://registry.npmjs.org/source-map-support/-/source-map-support-0.5.10.tgz#2214080bc9d51832511ee2bab96e3c2f9353120c"
+  integrity sha512-YfQ3tQFTK/yzlGJuX8pTwa4tifQj4QS2Mj7UegOu8jAz59MqIiMGPXxQhVQiIMNzayuUSF/jEuVnfFF5JqybmQ==
   dependencies:
     buffer-from "^1.0.0"
     source-map "^0.6.0"

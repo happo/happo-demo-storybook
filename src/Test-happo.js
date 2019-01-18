@@ -1,11 +1,5 @@
-import styled, { ThemeProvider, createGlobalStyle } from 'styled-components';
+import styled, { ThemeProvider } from 'styled-components';
 import React from 'react';
-
-const GlobalStyle = createGlobalStyle`
-  body {
-    color: red;
-  }
-`;
 
 const Label = styled.div`
   border: 1px solid blue;
@@ -14,9 +8,6 @@ const Label = styled.div`
 
 export default () => (
   <ThemeProvider theme={{ fg: 'blue' }}>
-    <React.Fragment>
-      <GlobalStyle />
-      <Label>Test</Label>
-    </React.Fragment>
+    <Label>Test</Label>
   </ThemeProvider>
 );
