@@ -27,7 +27,7 @@ module.exports = {
   },
 
   plugins: [
-    happoPluginStorybook(),
+    happoPluginStorybook({}),
   ],
 
   type: 'react',

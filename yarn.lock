@@ -5625,10 +5625,10 @@ handlebars@^4.0.3:
   optionalDependencies:
     uglify-js "^3.1.4"
 
-happo-plugin-storybook@^1.1.4:
-  version "1.1.4"
-  resolved "https://registry.npmjs.org/happo-plugin-storybook/-/happo-plugin-storybook-1.1.4.tgz#867de73d19a24e71960f6e0637e8347848aa596d"
-  integrity sha512-dQqofq30HBhmye8B8G+8OEWFkizMhbpqqWdYxT2Y13FBrN0Dglnwu23kBrYkQyplLaTFnPxxkZxw3OOBPBB7ig==
+happo-plugin-storybook@^1.2.0-rc.2:
+  version "1.2.0-rc.2"
+  resolved "https://registry.npmjs.org/happo-plugin-storybook/-/happo-plugin-storybook-1.2.0-rc.2.tgz#5809d5e73b581c809e0b19161da610a0fc7b21f2"
+  integrity sha512-KH4EEetX6aoTyB40+WQomgxnil56leuBxTN434NgphrYFya8Zrq682xHUxwer2BmgWk70gngThEZIhQHGqLblA==
 
 happo.io@^3.5.1-rc.10:
   version "3.5.1-rc.10"
