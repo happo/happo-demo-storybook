@@ -1,0 +1,20 @@
+#!/bin/bash
+
+# Make the whole script fail on errors
+set -euo pipefail
+
+# Prepare environment variables found in the github event json file.
+ENV_VARS=$(echo "
+  const json = require('$GITHUB_EVENT_PATH');
+  console.log(\`export PREVIOUS_SHA=\${json.pull_request.base.sha}\`);
+  console.log(\`export CURRENT_SHA=\${json.pull_request.head.sha}\`);
+  console.log(\`export CHANGE_URL=\${json.pull_request.html_url}\`);
+" | node)
+eval $ENV_VARS
+
+export HAPPO_IS_ASYNC=true
+
+# Delegate to the canonical script. It will use the env variables we have
+# prepared.
+#
+yarn happo-ci

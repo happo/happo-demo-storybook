@@ -9,8 +9,10 @@
   },
   "scripts": {
     "happo": "happo",
-    "happo-ci": "happo-ci-circleci",
+    "happo-ci": "happo-ci",
+    "happo-ci-circleci": "happo-ci-circleci",
     "happo-ci-travis": "happo-ci-travis",
+    "happo-ci-github-actions": "./happo-ci-github-actions",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -35,6 +37,6 @@
     "@storybook/react": "^4.1.4",
     "babel-loader": "^8.0.4",
     "happo-plugin-storybook": "^1.1.4",
-    "happo.io": "^3.5.1-rc.10"
+    "happo.io": "^5.5.0-rc.1"
   }
 }
