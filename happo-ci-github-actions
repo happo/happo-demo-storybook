@@ -3,17 +3,32 @@
 # Make the whole script fail on errors
 set -euo pipefail
 
+
+cat $GITHUB_EVENT_PATH
+
 # Prepare environment variables found in the github event json file.
 ENV_VARS=$(echo "
   const json = require('$GITHUB_EVENT_PATH');
   if (!process.env.PREVIOUS_SHA) {
-    console.log(\`export PREVIOUS_SHA=\${json.pull_request.base.sha}\`);
+    if (json.pull_request) {
+      console.log(\`export PREVIOUS_SHA=\${json.pull_request.base.sha}\`);
+    } else {
+      console.log(\`export PREVIOUS_SHA=\${json.after}\`);
+    }
   }
   if (!process.env.CURRENT_SHA) {
-    console.log(\`export CURRENT_SHA=\${json.pull_request.head.sha}\`);
+    if (json.pull_request) {
+      console.log(\`export CURRENT_SHA=\${json.pull_request.head.sha}\`);
+    } else {
+      console.log(\`export CURRENT_SHA=\${json.after}\`);
+    }
   }
   if (!process.env.CHANGE_URL) {
-    console.log(\`export CHANGE_URL=\${json.pull_request.html_url}\`);
+    if (json.pull_request) {
+      console.log(\`export CHANGE_URL=\${json.pull_request.html_url}\`);
+    } else {
+      console.log(\`export CHANGE_URL=\${json.head_commit.url}\`);
+    }
   }
 " | node)
 eval $ENV_VARS
