@@ -13,6 +13,6 @@ jobs:
     steps:
       - checkout
       - run: yarn install
-      - run: yarn happo-ci
+      - run: yarn happo-ci-circleci
 
 

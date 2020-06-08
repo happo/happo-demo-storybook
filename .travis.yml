@@ -2,4 +2,4 @@ language: node_js
 node_js:
   - "10"
 before_script: env
-script: yarn happo-ci-travis
+script: echo 'disabled'
