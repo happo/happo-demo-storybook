@@ -26,6 +26,8 @@ module.exports = {
     }),
   },
 
+  project: process.env.HAPPO_PROJECT,
+
   plugins: [
     happoPluginStorybook(),
   ],
