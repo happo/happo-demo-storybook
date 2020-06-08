@@ -8,17 +8,14 @@ on:
     branches: [ master ]
   pull_request:
     branches: [ master ]
-
 jobs:
-  build:
+  happo:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
       - uses: actions/setup-node@v1
-      - name: install modules
-        run: yarn install
-      - name: happo
-        run: yarn happo-ci-github-actions
+      - run: yarn install
+      - run: yarn happo-ci-github-actions
         env:
           HAPPO_API_KEY: ${{ secrets.HAPPO_API_KEY }}
           HAPPO_API_SECRET: ${{ secrets.HAPPO_API_SECRET }}
