@@ -5775,10 +5775,10 @@ happo-plugin-storybook@^1.1.4:
   resolved "https://registry.npmjs.org/happo-plugin-storybook/-/happo-plugin-storybook-1.1.4.tgz#867de73d19a24e71960f6e0637e8347848aa596d"
   integrity sha512-dQqofq30HBhmye8B8G+8OEWFkizMhbpqqWdYxT2Y13FBrN0Dglnwu23kBrYkQyplLaTFnPxxkZxw3OOBPBB7ig==
 
-happo.io@^5.5.0-rc.1:
-  version "5.5.0-rc.1"
-  resolved "https://registry.yarnpkg.com/happo.io/-/happo.io-5.5.0-rc.1.tgz#1f1ce9f82ff234081e8952e5f69ab38f04795c99"
-  integrity sha512-el861E5BN9VXku3mtOc30ebVQCWWoqsRZbb6ZP8jEleRcMlghsQkV2l9YDSuf7gKALaMbF5lcwJEfpLZh80Aww==
+happo.io@^5.5.0-rc.3:
+  version "5.5.0-rc.3"
+  resolved "https://registry.yarnpkg.com/happo.io/-/happo.io-5.5.0-rc.3.tgz#c14e5a32fa75b14727bbb75f1e546dfea2082b59"
+  integrity sha512-rK2BZxFy7yXeOKsH7hNmUI6ogYbZzjsRzEVUZN01BRe3YiBdfY5Zuezcdjg6jOoMVytJL3EtgtHls2VhcHo4AA==
   dependencies:
     archiver "^3.0.0"
     async-retry "^1.3.1"
